@@ -5,7 +5,7 @@ Think of this project as a project that could be implemented at the university s
 
 ## Data Analytics Methodology
 **Transforming data into insights**: the six steps of data analytics include: *ask*, *prepare*, *process*, *analyze*, *share*, and *act*. 
-1. **Ask**: effective questions and collaborated with leaders and managers who are interested in the outcome
+1. **Ask**: effective questions and collaborate with leaders and managers who are interested in the outcome
 1. **Prepare**: It all start wth a solid preparation. During this step, the analysts identify what data they need to achieve the succesful result they identified in the previous step.
 1. **Process**: In this step, the data analyst make sure how data would be collected, stored, managed, and protected.
 1. **Analyse**: This is the moment where the data analyst dive into the data, combine data from multiple sources, do the calculations and data validations.
@@ -14,7 +14,7 @@ Think of this project as a project that could be implemented at the university s
 
 You will see that this project will not cover all the steps above, but the idea of initially listing all steps is to give an ideia on how to work in a data analysis process. 
 
-## Tasks in this project:
+## Tasks in this project
 1. Understand the problem statement
 1. Import libraries and data sets
 1. Perform exploratory data analysis
