@@ -12,7 +12,7 @@ Think of this project as a project that could be implemented at the university s
 1. **Share**: Share the results with stakeholders involved in the project.
 1. **Act**: The last stage of the process where the team of analysts work with stakeholders within their company and decide how best to implement sugegstions and actions based on the fidings. 
 
-You will see that this project will not cover all the steps above, but the idea of initially listing all steps is to give an ideia on how to work in a data analysis process. 
+You will see that this project will not cover all the steps above, but the idea of initially listing all steps is to show how to work in a data analysis process. 
 
 ## Tasks in this project
 1. Understand the problem statement
