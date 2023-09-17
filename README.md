@@ -1,4 +1,4 @@
-# UniversityAdmission
+## UniversityAdmission
 University Admission Prediction Using Multiple Linear Regression is a hands-on project where I trained a regression model to find the probability of a student getting accepted into a particular university based on their profile.
 
 Think of this project as a project that could be implemented at the university side. The university could collect all the data beforehand in which the commitee, for example, that decide which studens should be able to enroll in it will be accepted in a university program based on the features we can extract all that data such as GRE Score, TOEFL score, university rating, statement of purpose, Letter of Recommendation, GPA and research experience. 
@@ -29,5 +29,19 @@ You will see that this project will not cover all the steps above, but the idea 
 ## Data Source
 For this project we will be using the [Data source](https://www.kaggle.com/mohansacharya/graduate-admissions) available at kaggle.
 
-**Thanks for checking out my work :+1:**
+## Code Source
+To develop the analysis, I used the Colab notebook available on **GitHub**. [Click here](https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb) to access the file and see the results. 
+
+Check some of the libraries used to develop the analysis:
+
+```
+import pandas as pd #used for data frame manipulation
+import numpy as np #used for numerical analysis
+import seaborn as sns #used for data visualization
+import matplotlib.pyplot as plt #used for data visualization
+import warnings
+warnings.filterwarnings("ignore")
+```
+
+**Enjoy the content!**
 
