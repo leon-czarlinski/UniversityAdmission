@@ -23,7 +23,6 @@ You will see that this project will not cover all the steps above, but the idea 
 1. Train and evaluate a linear regression model
 1. Train and evaluate an artificial neural network
 1. Train and evaluate a decision tree and random forest models
-1. Understand various regression KPIs
 1. Calculate regression model KPIs
 
 ## Data Source
