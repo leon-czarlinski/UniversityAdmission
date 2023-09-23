@@ -1,84 +1,203 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>University Admission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>University Admission Study</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!-- google fonts icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
   </head>
+  
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>University Admission Study</h1>
-        <p>This is a result of the course taken on Coursera</p>
-        <p class="view"><a href="https://github.com/leon-czarlinski/UniversityAdmission" target="_blank">View the Project on GitHub</a></p>
-        <ul>
-          <li><a href="https://www.kaggle.com/datasets/mohansacharya/graduate-admissions" target="_blank">Download <strong>CSV file</strong></a></li>
-          <li><a href="https://github.com/leon-czarlinski/UniversityAdmission/tree/main" target="_blank">Fork On <strong>GitHub</strong></a></li>
-          <li><a href="https://leon-czarlinski.github.io/">Return to <strong>Home Page</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h2>About the project</h2>
-
-        <p>University Admission Prediction Using Multiple Linear Regression is a hands-on project where I trained a regression model to find the probability of a student getting accepted into a particular university based on their profile.</p>
-        <p>Think of this project as a project that could be implemented at the university side. The university could collect all the data beforehand in which the commitee, for example, that decide which studens should be able to enroll in it will be accepted in a university program based on the features we can extract all that data such as GRE Score, TOEFL score, university rating, statement of purpose, Letter of Recommendation, GPA and research experience.</p>
-
-        <h2>Data Analytics Methodology</h2>
-
-        <p>Transforming data into insights: the six steps of data analytics include: <strong>ask, prepare, process, analyze, share, and act</strong>.</p>
-        <img src="./images/data_analysis_process.png" alt="visualization of the methodology of transforming data into insights">
-
-        <p><em>picture by google</em></p>
-
-        <p>You will see that this project will not cover all the steps above, but the idea of initially listing all steps is to show how to work in a data analysis process.</p>
-
-        <h2>Tasks in this project</h2>
-
-        <ol>
-          <li>Understand the problem statement</li>
-          <li>Import libraries and data sets</li>
-          <li>Perform exploratory data analysis</li>
-          <li>Perform data visualization</li>
-          <li>Create training and testing dataset</li>
-          <li>Train and evaluate a linear regression model</li>
-          <li>Train and evaluate an artificial neural network</li>
-          <li>Train and evaluate a decision tree and random forest models</li>
-          <li>Calculate regression model KPIs</li>
-        </ol>
-
-        <h2>Data Source</h2>
-
-        <p>For this project we will be using the Data source available at kaggle. <a href="https://www.kaggle.com/datasets/mohansacharya/graduate-admissions" target="_blank">Click here</a> to access. 
-
-        <h2>Code Source</h2>
-
-        <p>To develop the analysis, I used the Colab notebook available on <strong>GitHub</strong>.
-        <a href="https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb" target="_blank">Click here </a>to access the file and see the results.</p>
-
-        <p>Check some of the libraries used to develop the analysis</p>
-
-        <pre><code>
+    <div class="container-fluid px-0">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg border-bottom">
+          <div class="container-fluid">
+            <div class="navbar-brand" href="/">
+              <img class="material-icons-outlined me-1" src="images/IconLSC.png" alt="Leon Schedlin Czarlinski brand icon, pile of legos">
+              Leon Schedlin Czarlinski
+            </div>
+            <button type="button" 
+              class="navbar-toggler" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container px-3">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="https://leon-czarlinski.github.io/">Home</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="https://leon-czarlinski.github.io/#about">About</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="https://leon-czarlinski.github.io/#portfolio">Portfolio</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="https://leon-czarlinski.github.io/#workexperience">Work Experience</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="https://leon-czarlinski.github.io/#contact">Contact Me</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h2 class="fw-bolder mb-1">University Admission Study</h2>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">September, 2023 by Leon Schedlin Czarlinski</div>
+                            <!-- Post categories-->
+                            <div class="badge bg-primary rounded-pill">Data</div>
+                            <div class="badge bg-success rounded-pill">Python</div>
+                            <div class="badgeothers badge bg-primary rounded-pill">Linear Regression</div>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-6 mb-4">University Admission Prediction Using Multiple Linear Regression is a hands-on project where I trained a regression model to find the probability of a student getting accepted into a particular university based on their profile.</p>
+                            <p class="fs-6 mb-4">Think of this project as a project that could be implemented at the university side. The university could collect all the data beforehand in which the commitee, for example, that decide which studens should be able to enroll in it will be accepted in a university program based on the features we can extract all that data such as GRE Score, TOEFL score, university rating, statement of purpose, Letter of Recommendation, GPA and research experience.</p>
+                            
+                            <h3 class="fw-bolder mb-4 mt-5">Data Analytics Methodology</h3>
+                            <p class="fs-6 mb-4">Transforming data into insights: the six steps of data analytics include: <strong>ask, prepare, process, analyze, share, and act</strong>.</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./images/data_analysis_process.png" alt="visualization of the 6 steps methodology of transforming data into insights" /></figure>
+                            <p class="fs-6 mb-4">You will see that this project will not cover all the steps above, but the idea of initially listing all steps is to show how to work in a data analysis process.</p>
+                            
+                            <h3 clas="fw-bolder mb-4 mt-5">Tasks in this project</h3>
+                            <ol class="fs-6 mb-4">
+                              <li class="fs-6 mb-1">Understand the problem statement</li>
+                              <li class="fs-6 mb-1">Import libraries and data sets</li>
+                              <li class="fs-6 mb-1">Perform exploratory data analysis</li>
+                              <li class="fs-6 mb-1">Perform data visualization</li>
+                              <li class="fs-6 mb-1">Create training and testing dataset</li>
+                              <li class="fs-6 mb-1">Train and evaluate a linear regression model</li>
+                              <li class="fs-6 mb-1">Train and evaluate an artificial neural network</li>
+                              <li class="fs-6 mb-1">Train and evaluate a decision tree and random forest models</li>
+                              <li class="fs-6 mb-1">Calculate regression model KPIs</li>
+                            </ol>
+                           
+                            <h3 clas="fw-bolder mb-4 mt-5">Data source</h3>
+                            <p class="fs-6 mb-4">For this project we will be using the Data source available at kaggle. <a href="https://www.kaggle.com/datasets/mohansacharya/graduate-admissions" target="_blank">Click here</a> to access.
+                            
+                            <h3 clas="fw-bolder mb-4 mt-5">Code source</h3>
+                            <p class="fs-6 mb-4">To develop the analysis, I used the Colab notebook available on <strong>GitHub</strong>.
+                              <a href="https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb" target="_blank">Click here </a>to access the file and see the results.</p>
+                            
+                            <div class="text-bg-light">
+                            <pre><code class="python">
 import pandas as pd #used for data frame manipulation
 import numpy as np #used for numerical analysis
 import seaborn as sns #used for data visualization
 import matplotlib.pyplot as plt #used for data visualization
 import warnings
 warnings.filterwarnings("ignore")
-        </code></pre>
-
-        <h2>Enjoy the content!</h2>
-      </section>
-      <footer>
-        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a> &mdash; Hosted on GitHub Pages </small></p>
-      </footer>
+                            </code></pre>
+                          </div>
+                              
+                        <div class="container"><p class="float-end"><a href="#">Back to top</a></p></div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-md-4">
+                  <div class="position-sticky" style="top: 2rem;">
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Sources</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb" target="_blank"><strong>Code source</strong></a></li>
+                                        <li><a href="https://www.kaggle.com/datasets/mohansacharya/graduate-admissions" target="_blank"><strong>Data source</strong></a></li>
+                                        <li><a href="https://github.com/leon-czarlinski/UniversityAdmission" target="_blank"><strong>GitHub repository</strong></a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">JavaScript</a></li>
+                                        <li><a href="#!">CSS</a></li>
+                                        <li><a href="#!">Tutorials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <!-- <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <span class="footer mb-3 mb-md-0 text-body-secondary">Leon Schedlin Czarlinski</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="iconfooter ms-3"><a class="text-body-secondary" href="mailto:leon.victor104@hotmail.com" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#BA3521" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg></a>
+                </li>
+    
+                <li class="iconfooter ms-3"><a class="text-body-secondary" href="https://github.com/leon-czarlinski" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#BA3521" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg></a>
+                </li>
+    
+                <li class="iconfooter ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/leon-czarlinski" target="_blank" >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#BA3521" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg></a>
+                </li>
+    
+                <li class="iconfooter ms-3"><a class="text-body-secondary" href="https://public.tableau.com/app/profile/leon8208" target="_blank">
+                  <img class="tableaulogo" src="images/tableau-icon.svg">
+                </a>
+                </li>
+              </ul>
+            </footer>
+          </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        
+        <!-- Custom JS -->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
