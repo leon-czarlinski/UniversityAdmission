@@ -1,0 +1,163 @@
+/*
+Color palette 1
+#F7FFF7 - white
+#721817 - persian plum (vinho)
+#FA9F42 - deep saffron (amarelo)
+#ECB000 - burned yellow
+#2B4162 - indigo dye (azul)
+#0B6E4F - bottle green (verde)
+#E0E0E2 - gainsboro (cinza)
+
+Color palette 2
+Blue Navy (#0F222D):
+  RGB: (15, 34, 45)
+Blue Grey (#2A3C47):
+  RGB: (42, 60, 71)
+Orange (Terra) (#BA3521):
+  RGB: (186, 53, 33)
+Beige (#EBE7D9):
+  RGB: (235, 231, 217)
+Cream (#FFF5D0):
+  RGB: (255, 245, 208)
+*/
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.navbar-brand:hover{
+  cursor: default;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: #FFF5D0;
+  background-color: #BA3521;
+}
+
+.my-5 > h2 {
+  font-size: 50px;
+}
+
+.my-5 > h3{
+  color: #BA3521;
+}
+
+.gridbanner > .btn-primary {
+  background-color: #BA3521 !important;
+  border: solid #BA3521 !important;
+  color: #FFF5D0;
+}
+
+.btn-outline-primary {
+  color: #BA3521 !important;
+  border: solid #BA3521 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #BA3521 !important;
+  color: #FFF5D0 !important;
+}
+
+.material-icons-outlined{
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+/* NAVBAR */
+
+.navbar-brand > .material-icons-outlined{
+  height: 30px;
+}
+
+/* ABOUT */
+
+.about > .material-icons-outlined{
+  font-size: 60px;
+  color: #BA3521 !important;
+}
+
+/* PORTFOLIO */
+
+.card > img{
+  height: 250px;
+  object-fit: cover;
+}
+
+.badgeothers{
+  /* Others */
+  background-color: rgb(15, 34, 45, 0.8) !important;
+}
+
+/* WORK EXPERIENCE */
+
+.accordion-button{
+  color:#BA3521 !important;
+  background-color: rgb(186, 53, 33, 0.1) !important;
+  box-shadow: 0 0 !important;
+  font-weight: bold;
+}
+
+.accordion-body{
+  text-align: left;
+}
+
+/* CONTACT ME */
+
+.contact > .material-icons-outlined{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%; /* Makes it a circle */
+  background-color: rgb(186, 53, 33, 0.1) !important;
+  color: rgb(186, 53, 33) !important;
+  text-align: center;
+  font-size: 35px;
+  margin: auto; /* Center the circle horizontally */
+}
+
+.contact > .material-icons-outlined:hover{
+  background-color: rgb(186, 53, 33, 0.9) !important;
+  color: rgb(255, 245, 208) !important;
+  cursor:default;
+  transition: 0.4s;
+}
+
+
+.tableaulogo{
+  width: 24px;
+}
+
+.footer:hover{
+  cursor: default;
+}
+
+/* 
+badges
+<span class="badge text-bg-primary">Primary</span> DataAnalysis 
+<span class="badge text-bg-success">Success</span> Python
+<span class="badge text-bg-secondary">Secondary</span> SQL
+
+<span class="badge text-bg-warning">Warning</span> Volunteer
+
+<span class="badge text-bg-info">Info</span> HTML
+<span class="badge text-bg-dark">Dark</span> CSS
+<span class="badge text-bg-danger">Danger</span> JavaScript
+
+
+*/
