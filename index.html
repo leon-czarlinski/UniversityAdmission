@@ -79,12 +79,11 @@
                             <div class="badge bg-success rounded-pill">Python</div>
                             <div class="badgeothers badge bg-primary rounded-pill">Linear Regression</div>
                         </header>
-                        <!-- Preview image figure-->
                         <!-- Post content-->
                         <section class="mb-5">
                             <p class="fs-6 mb-4">University Admission Prediction Using Multiple Linear Regression is a hands-on project where I trained a regression model to find the probability of a student getting accepted into a particular university based on their profile.</p>
                             <p class="fs-6 mb-4">Think of this project as a project that could be implemented at the university side. The university could collect all the data beforehand in which the commitee, for example, that decide which studens should be able to enroll in it will be accepted in a university program based on the features we can extract all that data such as GRE Score, TOEFL score, university rating, statement of purpose, Letter of Recommendation, GPA and research experience.</p>
-                            
+                            <p class="fs-6 mb-4">To check the analysis on GitHub, <a href="https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb">click here</a>. Below, I explain a little bit about the <strong>Data analytics methodology, tasks involved in the project, data and code source, and the conclusions.</strong></strong></a></p>
                             <h3 class="fw-bolder mb-4 mt-5">Data Analytics Methodology</h3>
                             <p class="fs-6 mb-4">Transforming data into insights: the six steps of data analytics include: <strong>ask, prepare, process, analyze, share, and act</strong>.</p>
                             <figure class="mb-4"><img class="img-fluid rounded" src="./images/data_analysis_process.png" alt="visualization of the 6 steps methodology of transforming data into insights" /></figure>
@@ -105,7 +104,59 @@
                            
                             <h3 clas="fw-bolder mb-4 mt-5">Data source</h3>
                             <p class="fs-6 mb-4">For this project we will be using the Data source available at kaggle. <a href="https://www.kaggle.com/datasets/mohansacharya/graduate-admissions" target="_blank">Click here</a> to access.
-                            
+                            <p class="fs-6 mb-4">The data set contains 7 parameters considered important for admissions. The parameters included are:</p>
+                            <table class="table table-striped mb-5">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Feature</th>
+                                  <th scope="col">Details</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>GRE Score</td>
+                                  <td>out of 340</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>TOEFL Score</td>
+                                  <td>out of 120</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>University Rating</td>
+                                  <td>out of 5</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>SOP</td>
+                                  <td>Statement of purpose, out of 5</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td>LOR</td>
+                                  <td>Letter of recommendation, out of 5</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td>CGPA</td>
+                                  <td>Udergraduate GPA, out of 10</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">7</th>
+                                  <td>Research</td>
+                                  <td>Research experience, either 0 or 1</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">8</th>
+                                  <td>Chance of Admit</td>
+                                  <td>Chance of Admission, ranging from 0 to 1</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
                             <h3 clas="fw-bolder mb-4 mt-5">Code source</h3>
                             <p class="fs-6 mb-4">To develop the analysis, I used the Colab notebook available on <strong>GitHub</strong>.
                               <a href="https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb" target="_blank">Click here </a>to access the file and see the results.</p>
@@ -116,6 +167,18 @@ import pandas as pd #used for data frame manipulation
 import numpy as np #used for numerical analysis
 import seaborn as sns #used for data visualization
 import matplotlib.pyplot as plt #used for data visualization
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, accuracy_sco
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.optimizers import Adam
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from math import sqrt
 import warnings
 warnings.filterwarnings("ignore")
                             </code></pre>
