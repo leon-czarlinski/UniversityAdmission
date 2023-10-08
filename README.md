@@ -29,7 +29,7 @@ You will see that this project will not cover all the steps above, but the idea 
 For this project we will be using the [Data source](https://www.kaggle.com/mohansacharya/graduate-admissions) available at kaggle.
 
 ## Code Source
-To develop the analysis, I used the Colab notebook available on **GitHub**. [Click here](https://github.com/leon-czarlinski/UniversityAdmission/blob/main/Graduate_Admission_Prediction.ipynb) to access the file and see the results. 
+To develop the analysis, I used the Colab notebook available on **GitHub**. [Click here](https://www.kaggle.com/code/leonczarlinski/prediction-using-multiple-linear-regresion/notebook) to access the file and see the results. 
 
 Check some of the libraries used to develop the analysis:
 
